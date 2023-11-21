@@ -1,5 +1,6 @@
-const shoppingCart = document.getElementById("container");
+const shoppingCart = document.getElementById("flex-container");
 const items = shoppingCart.getElementsByClassName("box");
+console.log(items)
 const totalPrice = document.getElementById("total-cost");
 
 let total = 0;
@@ -9,7 +10,7 @@ for (let i = 0; i < items.length; i++) {
     // For example, if each item has a "price" class:
     const itemPrice = parseFloat(items[i].getElementsByClassName("price")[0].innerText);
     total += itemPrice;
-} {
+
   const item = items[i];
   const minus = item.getElementsByClassName("minus")[0];
   const plus = item.getElementsByClassName("plus")[0];
